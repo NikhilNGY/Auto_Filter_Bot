@@ -1521,13 +1521,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "start":
         buttons = [[
-                    InlineKeyboardButton('🔰 ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ 🔰', url=f'http://telegram.me/{temp.U_NAME}?startgroup=true')
+                    InlineKeyboardButton('• ʙᴀᴄᴋᴜᴘ ᴄʜᴀɴɴᴇʟ •', url=f'http://telegram.me/KR_PICTURE')
                 ],[
-                    InlineKeyboardButton(' ʜᴇʟᴘ 📢', callback_data='help'),
-                    InlineKeyboardButton(' ᴀʙᴏᴜᴛ 📖', callback_data='about')
+                    InlineKeyboardButton('• ɢʀᴏᴜᴘ •', url=f'https://t.me/+x6OfRDdUPrUwZTZl'),
+                    InlineKeyboardButton('• ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ •', url=f'https://t.me/+fDkIGNmk5BU5ODVl')
                 ],[
-                    InlineKeyboardButton('ᴛᴏᴘ sᴇᴀʀᴄʜɪɴɢ ⭐', callback_data="topsearch"),
-                     InlineKeyboardButton('ᴜᴘɢʀᴀᴅᴇ 🎟', callback_data="premium_info"),
+                    InlineKeyboardButton('• ʜᴇʟᴘ •', callback_data="help"),
+                    InlineKeyboardButton('• ᴀʙᴏᴜᴛ •', callback_data="about"),
                 ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         current_time = datetime.now(pytz.timezone(TIMEZONE))
@@ -1589,14 +1589,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
 
     elif query.data == "about":
-        buttons = [[
-            InlineKeyboardButton('‼️ ᴅɪꜱᴄʟᴀɪᴍᴇʀ ‼️', callback_data='disclaimer'),
-            InlineKeyboardButton ('🪔 sᴏᴜʀᴄᴇ', callback_data='source'),
-        ],[
-            InlineKeyboardButton('ᴅᴏɴᴀᴛɪᴏɴ 💰', callback_data='donation'), 
-        ],[
+        buttons = [
             InlineKeyboardButton('⇋ ʙᴀᴄᴋ ᴛᴏ ʜᴏᴍᴇ ⇋', callback_data='start')
-        ]]
+        ]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
             text=script.ABOUT_TXT.format(temp.U_NAME, temp.B_NAME, OWNER_LNK),
