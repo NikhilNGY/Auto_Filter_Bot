@@ -203,7 +203,7 @@ async def dreamxbotz_list_movies(client, message):
 @Client.on_message(filters.private & filters.command("series"))
 async def dreamxbotz_list_series(client, message):
     try:
-        series_data = await dreamxbotz_get_series()
+        series_data = await KR_Picture_get_series()
         if not series_data:
             return await message.reply("❌ No Recent Series Found", parse_mode=ParseMode.HTML)       
         msg = "<b>Latest Uploades List ✅</b>\n\n"
@@ -213,5 +213,5 @@ async def dreamxbotz_list_series(client, message):
             msg += f"<b>{i}. {title} - Season {season_list}</b>\n"
         await message.reply(msg[:4096], parse_mode=ParseMode.HTML)
     except Exception as e:
-        logger.error(f"Error in dreamxbotz_list_series: {e}")
+        logger.error(f"Error in KR_Picture_list_series: {e}")
         await message.reply("An Error Occurred ☹️", parse_mode=ParseMode.HTML)
