@@ -1056,7 +1056,7 @@ async def set_tutorial(client, message: Message):
     except IndexError:
         return await message.reply_text(
             f"<b>ᴄᴏᴍᴍᴀɴᴅ ɪɴᴄᴏᴍᴘʟᴇᴛᴇ !!\n\nᴜꜱᴇ ʟɪᴋᴇ ᴛʜɪꜱ -</b>\n\n"
-            f"<code>/{message.command[0]} https://t.me/dreamxbotz</code>"
+            f"<code>/{message.command[0]} https://t.me/KR_Picture</code>"
         )
     if message.command[0] == "set_tutorial":
         tutorial_key = "tutorial"
@@ -1086,7 +1086,7 @@ async def handle_shortner_command(c, m, shortner_key, api_key, log_prefix, fallb
         return await m.reply_text(script.NT_ADMIN_ALRT_TXT)
     if len(m.command) != 3:
         return await m.reply(
-            f"<b>ᴜꜱᴇ ᴛʜɪꜱ ᴄᴏᴍᴍᴀɴᴅ ʟɪᴋᴇ -\n\n`/{m.command[0]} omegalinks.in your_api_key_here`</b>"
+            f"<b>ᴜꜱᴇ ᴛʜɪꜱ ᴄᴏᴍᴍᴀɴᴅ ʟɪᴋᴇ -\n\n`/{m.command[0]} vplink.in your_api_key_here`</b>"
         )
     sts = await m.reply("<b>♻️ ᴄʜᴇᴄᴋɪɴɢ...</b>")
     await asyncio.sleep(1.2)
