@@ -1503,7 +1503,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer(text=script.PRE_STREAM_ALERT, show_alert=True)
         dreamcinezone = await client.send_photo(
             chat_id=query.message.chat.id,
-            photo="https://i.ibb.co/whf8xF7j/photo-2025-07-26-10-42-46-7531339305176793100.jpg", 
+            photo="https://envs.sh/t3L.jpg", 
             caption=script.PRE_STREAM,
             reply_markup=InlineKeyboardMarkup([
                 [InlineKeyboardButton("🚀 Buy Premium 🚀", callback_data="premium_info")]
@@ -1621,7 +1621,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
                 msg = await client.send_photo(
                     chat_id=query.message.chat.id,
-                    photo="https://i.ibb.co/0jC8MSDZ/photo-2025-07-26-10-42-36-7531339283701956616.jpg", 
+                    photo="https://envs.sh/t3L.jpg", 
                     caption=(
                         "<b>🥳 ᴄᴏɴɢʀᴀᴛᴜʟᴀᴛɪᴏɴꜱ\n\n"
                         "🎉 ʏᴏᴜ ᴄᴀɴ ᴜsᴇ ꜰʀᴇᴇ ᴛʀᴀɪʟ ꜰᴏʀ <u>5 ᴍɪɴᴜᴛᴇs</u> ꜰʀᴏᴍ ɴᴏᴡ !\n\n"
@@ -1641,7 +1641,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "source":
         buttons = [[
-            InlineKeyboardButton('ᴅʀᴇᴀᴍxʙᴏᴛᴢ 📜', url='https://github.com/DreamXBotz/Auto_Filter_Bot.git'),
+            InlineKeyboardButton('• SUPPORT •', url='https://t.me/KR_Picture'),
             InlineKeyboardButton('⇋ ʙᴀᴄᴋ ⇋', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
