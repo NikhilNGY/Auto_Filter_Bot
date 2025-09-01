@@ -17,6 +17,8 @@
 <!-- > ## ⚠ <u>Under Maintenance</u> ⚠  
 > This repository is currently under maintenance. Please **DO NOT deploy** until further notice. -->
 
+[![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/deploy?name=auto-filter-bot&type=git&repository=NikhilNGY%2FAuto_Filter_Bot&branch=DreamXBotz&builder=dockerfile&instance_type=free&instances_min=0&autoscaling_sleep_idle_delay=3600&env%5BBOT_TOKEN%5D=2058289344%3AAAH5ZOQRWOvNVJAlLWUNr042rOWwOwQ07g4&env%5BDATABASE_URI%5D=mongodb%2Bsrv%3A%2F%2FFilter%3AFilter02%40filter2.onzxfkz.mongodb.net%2F%3FretryWrites%3Dtrue%26w%3Dmajority%26appName%3DFilter2&ports=8080%3Bhttp%3B%2F&hc_protocol%5B8080%5D=tcp&hc_grace_period%5B8080%5D=5&hc_interval%5B8080%5D=30&hc_restart_limit%5B8080%5D=3&hc_timeout%5B8080%5D=5&hc_path%5B8080%5D=%2F&hc_method%5B8080%5D=get)
+
 ## 🚀 Demo Bot
 
 
